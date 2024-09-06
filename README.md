@@ -13,7 +13,16 @@ The below video shows what the tracker output should look like. The target is re
 https://github.com/Triton-Robotics-Training/TR-CV-1/assets/33632547/c09eebcf-4f47-490b-9f65-17ddb58e281f
 
 ## Getting Started
-
+Next you have to build the packages. 2 tools we use for building packages are [rosdep](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Rosdep.html) and [colcon](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html). To install them into your system, start by running these commands:
+```
+# install colcon
+sudo apt install python3-colcon-common-extensions
+# install rosdep
+apt-get install python3-rosdep
+# initialize rosdep (only need to do this once)
+sudo rosdep init
+rosdep update
+```
 [Workspaces](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html) are directories for ROS2 packages. Start by opening a terminal and creating a training workspace directory for your ROS2 training packages. 
 ```
 mkdir training_ws/src
