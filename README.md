@@ -33,6 +33,7 @@ Then at the root of this workspace, first isntall any necessary dependencies usi
 ```
 cd TR-Autonomy-1/
 source /opt/ros/humble/setup.bash
+sudo apt-get update
 rosdep install -i --from-path src --rosdistro humble -y
 colcon build
 # OPEN_NEW_TERMINAL AND NAVIGATE TO YOUR CLONED REPOSITORY
